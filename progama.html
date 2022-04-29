@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(texto) {
+        saltarLinea();
+        document.write(texto);
+    }
+
+    var year = 2022;
+    var promedio = 0;
+    var edadXimena, edadPaola, edadLaura;
+    var saltoLinea= "<br><br><br>"; ///pone tres saltos de linea en la variable salto de linea
+
+    //Este codigo calcula las edades de Juan, Pedro, Carlos y Ximena
+
+    document.write("Juan tiene: " + (year-2000) + " años");
+    document.write(saltoLinea);
+    document.write("Pedro tiene: " + (year-1995) + " años");
+    saltarLinea();
+    document.write("Carlos tiene: " + (year-2005) + " años");
+    edadXimena = year - 2010;
+    imprimir("Ximena tiene: " + edadXimena + " años");
+
+    // year = 2020;
+    // document.write("<br>");
+    // document.write("<br>");
+    // edadXimena = year - 2010;
+    // document.write("Ximena tiene: " + edadXimena + " años");
+    // document.write("<br>");
+    // edadPaola = year - 1995;
+    // document.write("Paola tiene: " + edadPaola + " años");
+    // document.write("<br>");
+    // edadLaura = year - 2005;
+    // document.write("Laura tiene: " + edadLaura + " años");
+    // document.write("<br>");
+
+    // promedio = Math.round((edadXimena + edadPaola + edadLaura)/3);
+    // document.write("El promedio de las edades de las tres mujeres es:  " + promedio+ " años");
+    // document.write("<br>");
+
+</script>

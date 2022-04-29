@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<h1>Programa para calcular el IMC</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(texto) {
+        saltarLinea();
+        document.write(texto);
+    }
+
+    function fimc (peso, altura){
+        return (peso / (altura * altura));
+
+    }
+
+    // var pesoC = 71, pesoF = 75, altC = 1.72, altF = 1.73;
+   
+    // imprimir ("El promedio de imc calculado de Cristian y Felipe es: " + ((fimc(pesoC,altC)+fimc(pesoF, altF))/2));
+
+    var nombre = prompt("informe su nombre: ")
+    var peso = prompt(nombre + " informe su peso: "); // en una ventana emergente solicita un dato y almacena en la variable peso
+    var altura = prompt(nombre + " informe su altura: ");
+    
+    imprimir ("El imc calculado de "+ nombre +" es: " + fimc(peso,altura));
+
+</script>
